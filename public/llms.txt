@@ -1,0 +1,48 @@
+# InspireX Technologies Ltd
+
+> InspireX is a Canadian IT consulting, cybersecurity and technology staffing
+> firm based in Toronto, Ontario. It provides a full range of IT consulting and
+> staffing services and solutions that enable clients to operate in a highly
+> efficient, secure and effective manner, with custom-tailored solutions that
+> fit each client's operational requirements.
+
+## Company facts
+
+- Legal name: InspireX Technologies Ltd
+- Address: 100 King Street West – Suite 5700, Toronto, Ontario, Canada, M5X 1C7
+- General enquiries: info@inspirex.ca
+- Careers and applications: HR@inspirex.ca
+- CAGE code: 87PLO
+- California Certified Small Business: 2013947
+- Operating principles: transparency, efficiency, quality execution, communication, versatility
+- Senior consultants and principals have over 30 years of combined experience in
+  IT security, risk management, IT consulting, advanced solutioning and
+  regulatory compliance.
+
+## Solutions
+
+- [Cybersecurity](https://www.inspirex.ca/solutions/cybersecurity): Assessment, vulnerability management, incident response, penetration testing, governance and risk management, and compliance with NIST, CMMC, ISO 27001, 800-171 and PCI-DSS.
+- [24/7 Infrastructure Monitoring](https://www.inspirex.ca/solutions/infrastructure-monitoring): Network monitoring, alerting on condition, availability and performance, and network performance tracking.
+- [Disaster Recovery](https://www.inspirex.ca/solutions/disaster-recovery): Simplified backup and recovery of databases, servers, data files and applications, to minimize client downtime.
+- [Data Management](https://www.inspirex.ca/solutions/data-management): Data storage and data management solutions that prevent lost files, virus infection and accidental deletion.
+- [Software & Hardware Deployment](https://www.inspirex.ca/solutions/software-hardware-deployment): Custom deployment solutions developed to work within a client's constraints.
+- [Project & Program Management](https://www.inspirex.ca/solutions/project-program-management): High-level program management to maximize the efficiency of IT management systems and techniques.
+- [End-User Support](https://www.inspirex.ca/solutions/end-user-support): Break/fix, installation, moves, additions and changes, inventory and sanitization, SOPs, SLAs and end-user training.
+- [Video Conferencing & Telephone Support](https://www.inspirex.ca/solutions/video-conferencing-telephony): VOIP and analog devices, call centre management tools, PBX support, unified messaging, circuit administration and video conferencing administration.
+- [Application & Maintenance Support](https://www.inspirex.ca/solutions/application-maintenance-support): The AIEP approach — Assess, Implement, Evaluate, Protect — for keeping client applications current and secure.
+- [SAP Managed Services](https://www.inspirex.ca/solutions/sap-managed-services): S/4HANA upgrade strategy, SAP optimization, SAP data archiving and SAP managed support including OpenText Vendor Invoice Management.
+- [IT Staffing](https://www.inspirex.ca/solutions/it-staffing): Contract and direct-hire IT staffing matched to client hiring needs.
+
+## Pages
+
+- [Home](https://www.inspirex.ca/): Positioning, capability pillars and outcomes.
+- [About InspireX](https://www.inspirex.ca/about): Who we are, mission, values and vision, culture, business licenses.
+- [Our Solutions](https://www.inspirex.ca/solutions): All eleven solution areas.
+- [Why InspireX](https://www.inspirex.ca/why-inspirex): Documented differentiators and registrations.
+- [Our Team](https://www.inspirex.ca/team): Senior disciplines and how the team works.
+- [Careers](https://www.inspirex.ca/careers): Who we look for and how to apply.
+- [Contact Us](https://www.inspirex.ca/contact): Address, email and enquiry form.
+
+## Optional
+
+- [Sitemap](https://www.inspirex.ca/sitemap.xml)
