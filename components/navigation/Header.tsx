@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 import { Logo } from "@/components/layout/Logo";
 import { Container } from "@/components/ui/Container";
+import { FeaturedBadge } from "@/components/ui/FeaturedBadge";
 import { NAV } from "@/lib/content/nav";
 import { SOLUTION_GROUPS, SOLUTIONS } from "@/lib/content/solutions";
 import { cn } from "@/lib/utils/cn";
@@ -172,7 +173,7 @@ export function Header() {
             <Container wide>
               <div className="py-9">
                 {isSolutions ? (
-                  <div className="grid grid-cols-4 gap-x-8 gap-y-7">
+                  <div className="grid grid-cols-5 gap-x-6 gap-y-7">
                     {SOLUTION_GROUPS.map((group) => (
                       <div key={group}>
                         <p className="type-small mb-3 border-b border-white/10 pb-2.5 font-medium text-signal-300">
@@ -186,6 +187,7 @@ export function Header() {
                                 className="block rounded-lg px-2.5 py-1.5 text-[0.9375rem] text-white/75 transition-colors hover:bg-white/5 hover:text-white"
                               >
                                 {s.title}
+                                {s.featured && <FeaturedBadge className="ml-2" />}
                               </Link>
                             </li>
                           ))}

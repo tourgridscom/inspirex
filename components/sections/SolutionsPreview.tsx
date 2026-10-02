@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
+import { FeaturedBadge } from "@/components/ui/FeaturedBadge";
 import { SOLUTIONS, SOLUTION_GROUPS } from "@/lib/content/solutions";
 
 export function SolutionsPreview() {
@@ -12,7 +13,7 @@ export function SolutionsPreview() {
           <div>
             <Eyebrow>Our solutions</Eyebrow>
             <h2 className="type-h2 mt-6 max-w-[18ch]">
-              Eleven services. One accountable practice.
+              Thirteen services. One accountable practice.
             </h2>
           </div>
           <Button href="/solutions" variant="outline" className="justify-self-start lg:justify-self-end">
@@ -20,11 +21,11 @@ export function SolutionsPreview() {
           </Button>
         </div>
 
-        <div className="mt-14 grid gap-px overflow-hidden rounded-2xl bg-rule sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
+        <div className="mt-14 grid gap-px overflow-hidden rounded-2xl bg-rule sm:grid-cols-2 lg:mt-16 lg:grid-cols-5">
           {SOLUTION_GROUPS.map((group) => {
             const items = SOLUTIONS.filter((s) => s.group === group);
             return (
-              <div key={group} className="flex flex-col bg-paper p-7 lg:p-8">
+              <div key={group} className="flex flex-col bg-paper p-7 sm:last:col-span-2 lg:p-8 lg:last:col-span-1">
                 <h3 className="font-display text-[1.125rem] font-semibold tracking-[-0.015em] text-ink">
                   {group}
                 </h3>
@@ -39,7 +40,10 @@ export function SolutionsPreview() {
                           aria-hidden="true"
                           className="mt-[0.5rem] h-1 w-1 shrink-0 rounded-full bg-mist/50 transition-colors group-hover:bg-signal"
                         />
-                        {s.title}
+                        <span>
+                          {s.title}
+                          {s.featured && <FeaturedBadge className="ml-2" />}
+                        </span>
                       </Link>
                     </li>
                   ))}

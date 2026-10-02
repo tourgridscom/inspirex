@@ -3,6 +3,8 @@ import { PageHero } from "@/components/sections/PageHero";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { Container } from "@/components/ui/Container";
 import { SolutionsIndex } from "@/components/solutions/SolutionsIndex";
+import { FeaturedServices } from "@/components/solutions/FeaturedServices";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 import { QUOTE } from "@/lib/content/company";
 import { SOLUTIONS } from "@/lib/content/solutions";
 import { SITE } from "@/lib/constants/site";
@@ -12,7 +14,7 @@ import { JsonLd, breadcrumbs } from "@/lib/utils/jsonLd";
 
 export const metadata = pageMeta({
   title: "Our Solutions",
-  description: "Cybersecurity, 24/7 infrastructure monitoring, disaster recovery, data management, deployment, SAP managed services and IT staffing from InspireX.",
+  description: "Data cleaning and data enrichment, data management, cybersecurity, 24/7 infrastructure monitoring, disaster recovery, data management, deployment, SAP managed services and IT staffing from InspireX.",
   path: "/solutions",
 });
 
@@ -46,6 +48,16 @@ export default function SolutionsPage() {
           alt: "Server racks lit in the aisle of a data centre",
         }}
       />
+
+      <section className="border-b border-rule bg-paper-2 py-20 lg:py-24">
+        <Container wide>
+          <Eyebrow>Featured services</Eyebrow>
+          <h2 className="type-h2 mt-6 max-w-[22ch]">Clean, complete data at the core.</h2>
+          <div className="mt-10 lg:mt-12">
+            <FeaturedServices />
+          </div>
+        </Container>
+      </section>
 
       <section className="border-b border-rule bg-paper py-20 lg:py-28">
         <Container wide>

@@ -1,7 +1,8 @@
 /**
  * Every string below is sourced from the archived inspirex.ca site
  * (home, /about-us/ and /our-services/). Nothing here is invented:
- * where the archive was thin, the section is simply absent.
+ * where the archive was thin, the section is simply absent. The exceptions
+ * are Data Cleaning and Data Enrichment, newer services marked `featured`.
  */
 
 export type Solution = {
@@ -17,10 +18,63 @@ export type Solution = {
   capabilities?: string[];
   /** Archived stepped method, if the source described one. */
   method?: { name: string; steps: { term: string; detail: string }[] };
-  group: "Security & Risk" | "Infrastructure & Operations" | "Support & Service" | "Platforms & People";
+  group: "Data Services" | "Security & Risk" | "Infrastructure & Operations" | "Support & Service" | "Platforms & People";
+  /** Newer services highlighted with a badge wherever solutions are listed. */
+  featured?: boolean;
 };
 
 export const SOLUTIONS: Solution[] = [
+  {
+    slug: "data-cleaning",
+    title: "Data Cleaning",
+    short: "Data Cleaning",
+    summary:
+      "Deduplication, standardization and validation that turn inconsistent records into data your teams can trust.",
+    body: [
+      "Duplicate, incomplete and inconsistent records quietly undermine reporting, operations and every system that depends on them. Our consultants profile your data, correct it at the source, and put the rules in place that keep it clean.",
+    ],
+    capabilities: [
+      "Data profiling and quality assessment",
+      "Duplicate detection, matching and merging",
+      "Standardization of names, addresses, dates and formats",
+      "Validation and correction of missing or invalid values",
+      "Cleansing ahead of migrations, ERP and SAP go-lives",
+      "Ongoing data quality rules and monitoring",
+    ],
+    group: "Data Services",
+    featured: true,
+  },
+  {
+    slug: "data-enrichment",
+    title: "Data Enrichment",
+    short: "Data Enrichment",
+    summary:
+      "Appending verified attributes and context to your records so every decision is made on complete information.",
+    body: [
+      "Clean data is only the start. We enhance your existing records with verified, relevant attributes from trusted sources, giving your teams fuller customer, supplier and asset profiles without the manual research.",
+    ],
+    capabilities: [
+      "Firmographic and contact data appending",
+      "Address verification and geocoding",
+      "Product, supplier and asset attribute enrichment",
+      "Classification, categorization and tagging",
+      "Integration of enriched data into CRM, ERP and SAP systems",
+      "Scheduled refresh to keep records current",
+    ],
+    group: "Data Services",
+    featured: true,
+  },
+  {
+    slug: "data-management",
+    title: "Data Management",
+    short: "Data Management",
+    summary:
+      "Data storage and data management solutions that end lost files, virus infection and accidental deletion.",
+    body: [
+      "We provide data storage and data management solutions, which are of utmost significance to a sound IT department. This eliminates the headache of lost files, virus infection, and accidental deletion.",
+    ],
+    group: "Data Services",
+  },
   {
     slug: "cybersecurity",
     title: "Cybersecurity",
@@ -62,17 +116,6 @@ export const SOLUTIONS: Solution[] = [
       "Simplified backup and recovery of databases, servers, data files and applications — built to minimize downtime.",
     body: [
       "We understand how important it is to recover a system if disaster occurs, so we provide a solution which allows for simplified backup and recovery of databases, servers, data files and applications. We strive to minimize the clients’ downtime.",
-    ],
-    group: "Security & Risk",
-  },
-  {
-    slug: "data-management",
-    title: "Data Management",
-    short: "Data Management",
-    summary:
-      "Data storage and data management solutions that end lost files, virus infection and accidental deletion.",
-    body: [
-      "We provide data storage and data management solutions, which are of utmost significance to a sound IT department. This eliminates the headache of lost files, virus infection, and accidental deletion.",
     ],
     group: "Security & Risk",
   },
@@ -187,6 +230,10 @@ export const SOLUTIONS: Solution[] = [
 ];
 
 export const GROUP_IMAGES: Record<Solution["group"], { src: string; alt: string }> = {
+  "Data Services": {
+    src: "/images/server-towers.jpg",
+    alt: "A row of servers lit in blue and red",
+  },
   "Security & Risk": {
     src: "/images/processor-board.jpg",
     alt: "Close view of a server mainboard, processor socket and memory modules",
@@ -206,6 +253,7 @@ export const GROUP_IMAGES: Record<Solution["group"], { src: string; alt: string 
 };
 
 export const SOLUTION_GROUPS = [
+  "Data Services",
   "Security & Risk",
   "Infrastructure & Operations",
   "Support & Service",

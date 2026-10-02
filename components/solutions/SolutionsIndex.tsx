@@ -4,11 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { GROUP_IMAGES, SOLUTIONS, SOLUTION_GROUPS } from "@/lib/content/solutions";
+import { FeaturedBadge } from "@/components/ui/FeaturedBadge";
 import { cn } from "@/lib/utils/cn";
 
 /**
  * A solutions navigator: the group list steers a single detail panel, so the
- * eleven services read as one connected practice instead of eleven cards.
+ * services read as one connected practice instead of a wall of cards.
  */
 export function SolutionsIndex() {
   const [group, setGroup] = useState<(typeof SOLUTION_GROUPS)[number]>(SOLUTION_GROUPS[0]);
@@ -70,6 +71,7 @@ export function SolutionsIndex() {
               >
                 <h3 className="font-display text-[1.375rem] font-semibold leading-tight tracking-[-0.022em] text-ink transition-colors duration-300 group-hover:text-signal">
                   {s.title}
+                  {s.featured && <FeaturedBadge className="ml-2.5 -translate-y-0.5" />}
                 </h3>
                 <p className="measure self-center text-[1.0625rem] leading-relaxed text-mist">
                   {s.summary}

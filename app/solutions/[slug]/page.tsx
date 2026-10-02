@@ -4,8 +4,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PageHero } from "@/components/sections/PageHero";
 import { CtaBand } from "@/components/sections/CtaBand";
+import { DataPipeline } from "@/components/sections/DataPipeline";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { FeaturedBadge } from "@/components/ui/FeaturedBadge";
 import { getSolution, GROUP_IMAGES, SOLUTIONS } from "@/lib/content/solutions";
 import { TEAM_STATEMENT } from "@/lib/content/company";
 import { JsonLd, breadcrumbs, serviceSchema } from "@/lib/utils/jsonLd";
@@ -51,6 +53,7 @@ export default async function SolutionPage({ params }: { params: Promise<{ slug:
         title={solution.title}
         lead={solution.summary}
         image={GROUP_IMAGES[solution.group]}
+        aside={solution.featured && <FeaturedBadge className="ml-6 mt-6" />}
       />
 
       <section className="border-b border-rule bg-paper py-20 lg:py-28">
@@ -153,6 +156,8 @@ export default async function SolutionPage({ params }: { params: Promise<{ slug:
           </div>
         </Container>
       </section>
+
+      {solution.featured && <DataPipeline />}
 
       <CtaBand
         eyebrow={solution.title}

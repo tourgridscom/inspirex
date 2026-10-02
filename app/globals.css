@@ -188,3 +188,13 @@ textarea:focus-visible,
     transition-duration: 0.001ms !important;
   }
 }
+
+/* Fills a bar left to right; used by the data pipeline showcase. */
+@keyframes pipeline-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
